@@ -1,4 +1,4 @@
-class StockController < ApplicationController
+class StocksController < ApplicationController
   def search
     if params[:stock]
       @stock = Stock.find_by_ticker(params[:stock])
